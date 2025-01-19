@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Template</title>
+  <style>
+    .container {
+      background-color: {{backgroundColor}};
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+    .title {
+      font-size: {{titleFontSize}};
+      color: {{titleColor}};
+      margin-bottom: 20px;
+    }
+    .body {
+      font-size: {{bodyFontSize}};
+      color: {{bodyColor}};
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .image-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .image-section img {
+      width: 100%;
+      max-width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+    }
+    .footer {
+      font-size: {{footerFontSize}};
+      color: {{footerColor}};
+      margin-top: 20px;
+    }
+    button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo Section -->
+    <div class="logo">
+      <img src="{{logo}}" alt="Logo Preview">
+    </div>
+
+    <!-- Title Section -->
+    <div class="title">
+      {{titleText}}
+    </div>
+
+    <!-- Body Section -->
+    <div class="body">
+      {{bodyText}}
+    </div>
+
+    <!-- Image Section -->
+    <div class="image-section">
+      <img src="{{image}}" alt="Image Preview">
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      {{footerText}}
+    </div>
+  </div>
+</body>
+</html>
