@@ -39,7 +39,7 @@ const FooterInput = ({ emailTemplate, setEmailTemplate, setEnableUpload, setTab,
       }));
 
       const { data } = await axios.post(
-        "http://localhost:8000/api/post",
+        "/api/post",
         emailTemplate
       );
       if (data.success) {

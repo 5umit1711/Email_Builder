@@ -32,7 +32,7 @@ const Preview = ({ emailTemplate, enableUpload }) => {
       if (logoFile) formData.append("logo", logoFile);
       if (imageFile) formData.append("image", imageFile);
       const { data } = await axios.post(
-        `http://localhost:8000/api/upload-image/${emailId}`,
+        `/api/upload-image/${emailId}`,
         formData
       );
       if (data.success) {

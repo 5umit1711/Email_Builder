@@ -8,7 +8,7 @@ const EmailDownload = () => {
 
     const handleDownload = async () => {
         try {
-            const response = await axios.get(`http://localhost:8000/api/download/${id}`, {
+            const response = await axios.get(`/api/download/${id}`, {
                 responseType: 'blob',
             });
             const fileURL = window.URL.createObjectURL(new Blob([response.data]));
